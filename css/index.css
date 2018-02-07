@@ -71,12 +71,12 @@
 }
 .search{
 	border: 1px solid #E1E1E1;
-	width: 294px;
+	width: 295px;
 	height: 48px;
 	float: right;
 	margin-top: 25px;
 }
-.search_wenzi{
+/* .search_wenzi{
 	height: 48px;
 	float: left;
 	margin-left: 120px;
@@ -94,13 +94,28 @@
 	height: 48px;
 	border-left: 1px solid #E1E1E1;
 	float: right;
+} */
+.search_wenzi{
+	float: left;
 }
-.head_car{
+#search_btn{
+	font-family: 'iconfont';
+	background-color:#fff;
+	font-size: 18px;
+	color: #b0b0b0;
+	float:left;
+	border: 1px solid #b0b0b0;
+	/* margin-left: -2px; */
+/* 	width: 51px;
+	height: 48px; */
+}
+/* .head_car{
 	width: 20px;
 	height: 20px;
-	padding-left: 16px;
-	margin-top: 16px;	
-}
+	color: #A38475;
+	float: left;
+	margin-left: 5px;	
+} */
 
 .laijie{
 	width: 1226px;
@@ -917,11 +932,11 @@
 	height: 42px;
 	/* background-color: #5D1313; */
 	font-weight:42; 
-	font-size: 14;
+	font-size: 14px;
 	color: #fff;
 	padding: 0 30px;
 	position: relative;
-	
+	overflow: hidden;
 }
 .banner_last{
 	padding-bottom: 0px;
@@ -977,21 +992,18 @@
 .banner_lastbtn1:hover{
 	background-color: #FA8B8B
 }
-.banner_list{
+/* .banner_list{
 	position: relative;
 	overflow: hidden;
-}
-
+} */
 .banner_tan{
 	height: 460px;
 	width: 800px;
 	background-color: #fff;
-	float: left;
-	margin-top: 0px;
 	position: absolute;
 	top: 0;
 	left: 234px;
-	z-index: 1;
+	/* z-index: -1; */
 	transition: all 1s linear;
 	opacity: 0;
 }
@@ -1022,12 +1034,8 @@
 	float: left;
 }
 .banner_list:hover .banner_tan{
-	/* left: 234px; */
-	opacity: 1;
-	background-color: red;
-
 	bottom: 0;
-	/* opacity: 1; */
+	opacity: 1;
 }
 .banner_tanwenzi2{
 	cursor: pointer;
@@ -1270,4 +1278,86 @@
 }
 .reimai_product_item img{
 	cursor: pointer;
+}
+
+.neirong_item{
+	position: relative;
+	overflow: hidden;
+}
+.neirong_item_lbtn{
+	width: 20px;
+	height: 24px;
+	padding: 12px 0;
+	background-color: rgba(66, 66, 66, 0.2);
+	font-size: 12px;
+	text-align: center;
+	line-height: 24px;
+	color: #fafafa;
+	transition: all 1s linear;
+	position: absolute;
+	z-index: -1;
+}
+.neirong_item_rbtn{
+	width: 20px;
+	height: 24px;
+	padding: 12px 0;
+	background-color: rgba(66, 66, 66, 0.2);
+	font-size: 12px;
+	text-align: center;
+	line-height: 24px;
+	color: #fafafa;
+	top: 190px;
+	left: 276px;
+	transition: all 1s linear;
+	position: absolute;
+	z-index: -1;
+}
+.neirong_item:hover.neirong_item_lbtn{
+	bottom: 0;
+	opacity: 1;
+}
+.neirong_item:hover.neirong_item_rbtn{
+	bottom: 0;
+	opacity: 1;
+}
+
+.yingjian_left,.yingjian_item{
+	transition: all .5s linear;
+}
+.yingjian_left:hover,.yingjian_item:hover{
+	box-shadow: 0 10px 20px 5px #a9a8a8;
+	transform:translate(0,-4px) ;
+	
+}
+.dapei_left,.yingjian_item,.dapei_item1{
+	transition: all .5s linear;
+}
+.dapei_left:hover,.yingjian_item:hover,.dapei_item1:hover{
+	box-shadow: 0 10px 20px 5px #a9a8a8;
+	transform:translate(0,-4px) ;
+		
+}
+.reimai_product_item{
+	transition: all .5s linear;
+}
+.reimai_product_item:hover{
+	box-shadow: 0 10px 20px 5px #a9a8a8;
+	transform:translate(0,-4px) ;
+			
+}
+.neirong_item{
+	transition: all .5s linear;
+}
+.neirong_item:hover{
+	box-shadow: 0 10px 20px 5px #a9a8a8;
+	transform:translate(0,-4px) ;
+			
+}
+.shipin_item{
+	transition: all .5s linear;
+}
+.shipin_item:hover{
+	box-shadow: 0 10px 20px 5px #a9a8a8;
+	transform:translate(0,-4px) ;
+	
 }
