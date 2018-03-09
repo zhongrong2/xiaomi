@@ -102,14 +102,34 @@
 	<!-- 导航栏结束 -->
 	<!-- banner开始 -->
 	<div id="banner">
-		<div class="banner_image">
+		<!-- <div class="banner_image">
 			<img src="../image/banner/1.jpg" alt="">
 			<img src="../image/banner/2.jpg" alt="">
 			<img src="../image/banner/3.jpg" alt="">
 			<img src="../image/banner/4.jpg" alt="">
 			<img src="../image/banner/5.jpg" alt="">
 
-		</div>
+		</div> -->
+
+		<ul class="imgbox">
+			<li class="active"><img src="../image/banner/1.jpg" alt=""></li>
+			<li><img src="../image/banner/2.jpg" alt=""></li>
+			<li><img src="../image/banner/3.jpg" alt=""></li>
+			<li><img src="../image/banner/4.jpg" alt=""></li>
+			<li><img src="../image/banner/5.jpg" alt=""></li>
+		</ul>
+
+		<ul class="pagerbox">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+
+		<div class="prev"></div>
+		<div class="next"></div>
+
 		<ul class="banner_nav">
 			<li>
 				<div class="banner_list">
@@ -255,9 +275,9 @@
 				<span class="banner_jiantou">&gt;</span>
 			</li>
 		</ul>
-		<div class="banner_btn banner_lbtn">&lt;</div>
-		<div class="banner_btn banner_rbtn">&gt;</div>
-		<div class="banner_lastbtn">
+		<!-- <div class="banner_btn banner_lbtn">&lt;</div>
+		<div class="banner_btn banner_rbtn">&gt;</div> -->
+		<!-- <div class="banner_lastbtn">
 			<div class="banner_lastbtn1 banner_lastbtn3">
 						
 			</div>
@@ -277,7 +297,7 @@
 			<div class="banner_lastbtn1 banner_lastbtn2">
 						
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- banner结束 -->
 	<!-- 链接开始 -->
@@ -331,44 +351,141 @@
 		<div class="star_top">
 			<h1 >小米明星单品</h1>
 			<div class="star_btn">
-				<div class="star_btn1">&lt;</div>
-				<div>&gt;</div>
+				<div class="star_btn1 display">&lt;</div>
+				<div class="star_btn2">&gt;</div>
 			</div>
 		</div>
-		<div class="star_bottom">
-			<div class="star_item">
-				<img src="../image/1.png" alt="">
-				<h1>10000mAh小米移动电源2</h1>
-				<h2>双向快充，高密度锂聚合物电芯</h2>
-				<h3>79元</h3>
-			</div>
+		<div class="buy-bottom">
+			<div class="buy-time"></div>
+			<div class="buy_list">
+				<ul class="buy-inner">
+					<li>
+						<div class="star_item">
+							<img src="../image/1.png" alt="">
+							<h1>10000mAh小米移动电源2</h1>
+							<h2>双向快充，高密度锂聚合物电芯</h2>
+							<h3>79元</h3>
+						</div>
+					</li>
 
-			<div class="star_item star_item4">
-				<img src="../image/2.png" alt="">
-				<h1>米家iHealth血压计</h1>
-				<h2>爸妈上手就能用的智能血压计</h2>
-				<h3>399元</h3>
-			</div>
+					<li>
+						<div class="star_item star_item4">
+							<img src="../image/2.png" alt="">
+							<h1>米家iHealth血压计</h1>
+							<h2>爸妈上手就能用的智能血压计</h2>
+							<h3>399元</h3>
+						</div>
+					</li>
 
-			<div class="star_item star_item3">
-				<img src="../image/3.png" alt="">
-				<h1>米家LED智能台灯</h1>
-				<h2>无可视频闪，亮度色温无级调节</h2>
-				<h3>169元</h3>
-			</div>
+					<li>
+						<div class="star_item star_item4">
+							<img src="../image/2.png" alt="">
+							<h1>米家iHealth血压计</h1>
+							<h2>爸妈上手就能用的智能血压计</h2>
+							<h3>399元</h3>
+						</div>
+					</li>
 
-			<div class="star_item star_item2">
-				<img src="../image/4.png" alt="">
-				<h1>米家扫地机器人</h1>
-				<h2>智能路径规划，扫的干净扫的快</h2>
-				<h3>1699元</h3>
-			</div>
+					<li>
+						<div class="star_item star_item3">
+							<img src="../image/3.png" alt="">
+							<h1>米家LED智能台灯</h1>
+							<h2>无可视频闪，亮度色温无级调节</h2>
+							<h3>169元</h3>
+						</div>
+					</li>
 
-			<div class="star_item star_item1">
-				<img src="../image/5.png" alt="">
-				<h1>小米路由器3</h1>
-				<h2>更快更强，不止四天线</h2>
-				<h3>149元</h3>
+					<li>
+						<div class="star_item star_item2">
+							<img src="../image/4.png" alt="">
+							<h1>米家扫地机器人</h1>
+							<h2>智能路径规划，扫的干净扫的快</h2>
+							<h3>1699元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item star_item1">
+							<img src="../image/5.png" alt="">
+							<h1>小米路由器3</h1>
+							<h2>更快更强，不止四天线</h2>
+							<h3>149元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item">
+							<img src="../image/1.png" alt="">
+							<h1>10000mAh小米移动电源2</h1>
+							<h2>双向快充，高密度锂聚合物电芯</h2>
+							<h3>79元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item star_item4">
+							<img src="../image/2.png" alt="">
+							<h1>米家iHealth血压计</h1>
+							<h2>爸妈上手就能用的智能血压计</h2>
+							<h3>399元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item star_item4">
+							<img src="../image/2.png" alt="">
+							<h1>米家iHealth血压计</h1>
+							<h2>爸妈上手就能用的智能血压计</h2>
+							<h3>399元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item star_item3">
+							<img src="../image/3.png" alt="">
+							<h1>米家LED智能台灯</h1>
+							<h2>无可视频闪，亮度色温无级调节</h2>
+							<h3>169元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item star_item2">
+							<img src="../image/4.png" alt="">
+							<h1>米家扫地机器人</h1>
+							<h2>智能路径规划，扫的干净扫的快</h2>
+							<h3>1699元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item star_item1">
+							<img src="../image/5.png" alt="">
+							<h1>小米路由器3</h1>
+							<h2>更快更强，不止四天线</h2>
+							<h3>149元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item">
+							<img src="../image/1.png" alt="">
+							<h1>10000mAh小米移动电源2</h1>
+							<h2>双向快充，高密度锂聚合物电芯</h2>
+							<h3>79元</h3>
+						</div>
+					</li>
+
+					<li>
+						<div class="star_item star_item1">
+							<img src="../image/5.png" alt="">
+							<h1>小米路由器3</h1>
+							<h2>更快更强，不止四天线</h2>
+							<h3>149元</h3>
+						</div>
+					</li>
+
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -388,185 +505,1206 @@
 				</div>				
 			</div>
 			<div class="yingjian_product">				
-				<img src="../image/8.jpg" alt="" class="yingjian_left">			
-				<div class="yingjian_right">
-					<div class="yingjian_item">
-						<img src="../image/11.jpg" alt="">
-						<a>米家IH电饭煲 4L</a>
-						<p>3000 + 煮米方案，200 + 烹饪菜单</p>
-						<h1>5999元</h1>
-						<div class="zhineng_tan">
-							<a href="">我们家都觉得很kiang（不懂了吧，汕尾话！优秀！！）</a>							
+				<img src="../image/8.jpg" alt="" class="yingjian_left">	
+				<div class="content_zhinengyingjian">	
+					<div class="yingjian_right">
+						<div class="yingjian_item">
+							<img src="../image/11.jpg" alt="">
+							<a>米家IH电饭煲 4L</a>
+							<p>3000 + 煮米方案，200 + 烹饪菜单</p>
+							<h1>5999元</h1>
+							<div class="zhineng_tan">
+								<a href="">我们家都觉得很kiang（不懂了吧，汕尾话！优秀！！）</a>							
+							</div>
+							<div class="zhineng_dazhe">
+								享九折
+							</div>
 						</div>
-						<div class="zhineng_dazhe">
-							享九折
+
+						<div class="yingjian_item">
+							<img src="../image/12 (2).jpg" alt="">
+							<a>小米空气净化器2</a>
+							<p>高效除霾，10分钟换新房间空气</p>
+							<h1>699元</h1>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/113.jpg" alt="">
+							<a>九号平衡车</a>
+							<p>青年人的酷玩具，骑行遥控两种玩法</p>
+							<h1>1999元</h1>
+							<div class="zhineng_tan">
+								我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+								享九.五折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/12.jpg" alt="">
+							<a>Yeelght床头灯</a>
+							<p>触摸式操作，给卧室1600万中颜色</p>
+							<h1>229元</h1>
+						</div>
+
+						<div class="yingjian_item yingjian_item1">
+							<img src="../image/14.jpg" alt="">
+							<a>米家全景相机套装</a>
+							<p>2388万有效像素，IP67级防水防尘</p>
+							<h1>1699元</h1>
+							<div class="zhineng_tan">
+								刚收到  物流非常快。 第一次买笔记本电脑。就选中小...
+							</div>
+							<div class="zhineng_dazhe zhineng_dazhe1">
+								新品
+							</div>
+						</div>
+
+						<div class="yingjian_item yingjian_item1">
+							<img src="../image/15.jpg" alt="">
+							<a>米兔智能故事机</a>
+							<p>微信远程互动，智能语音交互</p>
+							<h1>199元</h1>
+						</div>
+
+						<div class="yingjian_item yingjian_item1">
+							<img src="../image/16.jpg" alt="">
+							<a>小米手环2</a>
+							<p>OLED显示屏幕，升级记步算法</p>
+							<h1>149元</h1>
+						</div>
+
+						<div class="yingjian_item yingjian_item1">
+							<img src="../image/17.jpg" alt="">
+							<a>小米无人机 4K版</a>
+							<p>探索触手可及的新视觉</p>
+							<h1>2999元</h1>
+							<div class="zhineng_tan">
+								不错，用起很舒服，唯一缺点，没银色
+							</div>
 						</div>
 					</div>
-
-					<div class="yingjian_item">
-						<img src="../image/12 (2).jpg" alt="">
-						<a>小米空气净化器2</a>
-						<p>高效除霾，10分钟换新房间空气</p>
-						<h1>699元</h1>
-					</div>
-
-					<div class="yingjian_item">
-						<img src="../image/113.jpg" alt="">
-						<a>九号平衡车</a>
-						<p>青年人的酷玩具，骑行遥控两种玩法</p>
-						<h1>1999元</h1>
-						<div class="zhineng_tan">
-							我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
-						</div>
-						<div class="zhineng_dazhe">
-							享九.五折
-						</div>
-					</div>
-
-					<div class="yingjian_item">
-						<img src="../image/12.jpg" alt="">
-						<a>Yeelght床头灯</a>
-						<p>触摸式操作，给卧室1600万中颜色</p>
-						<h1>229元</h1>
-					</div>
-
-					<div class="yingjian_item yingjian_item1">
-						<img src="../image/14.jpg" alt="">
-						<a>米家全景相机套装</a>
-						<p>2388万有效像素，IP67级防水防尘</p>
-						<h1>1699元</h1>
-						<div class="zhineng_tan">
-							刚收到  物流非常快。 第一次买笔记本电脑。就选中小...
-						</div>
-						<div class="zhineng_dazhe zhineng_dazhe1">
-							新品
-						</div>
-					</div>
-
-					<div class="yingjian_item yingjian_item1">
-						<img src="../image/15.jpg" alt="">
-						<a>米兔智能故事机</a>
-						<p>微信远程互动，智能语音交互</p>
-						<h1>199元</h1>
-					</div>
-
-					<div class="yingjian_item yingjian_item1">
-						<img src="../image/16.jpg" alt="">
-						<a>小米手环2</a>
-						<p>OLED显示屏幕，升级记步算法</p>
-						<h1>149元</h1>
-					</div>
-
-					<div class="yingjian_item yingjian_item1">
-						<img src="../image/17.jpg" alt="">
-						<a>小米无人机 4K版</a>
-						<p>探索触手可及的新视觉</p>
-						<h1>2999元</h1>
-						<div class="zhineng_tan">
-							不错，用起很舒服，唯一缺点，没银色
-						</div>
-					</div>
-				</div>					
+				</div>							
 			</div>
 		</div>
 	<!-- 智能硬件结束 -->
 	<!-- 搭配开始 -->
-		<div class="dapei">
-			<div class="yingjian_top">
-				<h1>搭配</h1>
-				<div class="dapei_rightwenzi">
-					<h2 class="dapei_rightwenzi1">热门</h2>
-					<h2>耳机音响</h2>
-					<h2>电源</h2>
-					<h2>电池存储卡</h2>
-				</div>				
-			</div>
-			<div class="yingjian_product">
-				<div class="dapei_left">
-					<img src="../image/10.jpg" alt="">
-				</div>											
-				<div class="yingjian_item dapei_item2">
-					<img src="../image/19.jpg" alt="">
-					<a>小米运动蓝牙耳机</a>
-					<h5>149元</h5>
-					<p>439人评价</p>
-					<div class="zhineng_tan">
-							我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+		<div class="content">
+			<div class="dapei">
+				<div class="yingjian_top">
+					<h1>搭配</h1>
+					<div class="dapei_rightwenzi">
+						<div class="type dapei_rightwenzi1">
+							<h2>热门</h2>
+						</div>
+						<div class="type">
+							<h2>耳机音响</h2>
+						</div>
+
+						<div class="type">
+							<h2>电源</h2>
+						</div>
+
+						<div class="type">
+							<h2>电池存储卡</h2>
+						</div>
+					</div>				
+				</div>
+				<div class="yingjian_product">
+					<div class="product_left">
+						<div class="dapei_left">
+							<img src="../image/10.jpg" alt="">
+						</div>
+						<div class="dapei_left dapei_item1">
+								<img src="../image/11.jpg" alt="">
+						</div>
 					</div>
-					<div class="zhineng_dazhe">
-							享九折
-					</div>
-				</div>
+				<div class="goodslists">
+					<div class="goodslist goodslist_active">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/19.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
 
-				<div class="yingjian_item">
-					<img src="../image/18.jpg" alt="">
-					<a>200000mah小米移动电源</a>
-					<h5>149元</h5>
-					<p>11万人评价</p>
-				</div>
+						<div class="yingjian_item">
+							<img src="../image/18.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
 
-				<div class="yingjian_item">
-					<img src="../image/17.jpg" alt="">
-					<a>小米移动电源10000mah高配版</a>
-					<h5>149元</h5>
-					<p>4928人评价</p>
-				</div>
+						<div class="yingjian_item">
+							<img src="../image/17.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
 
-				<div class="yingjian_item">
-					<img src="../image/20.jpg" alt="">
-					<a>小米网络音响</a>
-					<h5>399元</h5>
-					<p>4479人评价</p>
-				</div>	
+						<div class="yingjian_item">
+							<img src="../image/20.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
 
-				<div class="dapei_left dapei_item1">
-					<img src="../image/11.jpg" alt="">
-				</div>											
-				<div class="yingjian_item dapei_item2 dapei_item1">
-					<img src="../image/16.jpg" alt="">
-					<a>小米活塞耳机 清新版</a>
-					<h5>29元</h5>
-					<p>28人评价</p>
-				</div>
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/16.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
 
-				<div class="yingjian_item dapei_item1">
-					<img src="../image/11.jpg" alt="">
-					<a>小米蓝牙耳机青春版</a>
-					<h5>59元</h5>
-					<p>1.2万人评价</p>
-				</div>
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/11.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
 
-				<div class="yingjian_item dapei_item1">
-					<img src="../image/21.jpg" alt="">
-					<a>小米圈铁耳机</a>
-					<h5>149元</h5>
-					<p>1.4万人评价</p>
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/21.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>	
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/20.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/21.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/22.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/23.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/24.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/25.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/26.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>		
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/19.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/18.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/17.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/20.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/16.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/11.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/21.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>	
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/20.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/21.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/22.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/23.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/24.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/25.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/26.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>	
+					</div>		
 				</div>								
+			</div>
+		</div>
 
-				<div class="dapei_last dapei_item1">
-					<div class="dapei_last_left">
-						<h1 class="last_wenzi">小米小钢炮...</h1>
-						<h2 class="last_wenzi2">129元</h2>
-					</div>
-					<div class="dapei_last_right">
-						<img src="../image/23.jpg" alt="">
-					</div>					
-				</div>	
+		<div class="content">
+			<div class="dapei">
+				<div class="yingjian_top">
+					<h1>配件</h1>
+					<div class="dapei_rightwenzi">
+						<div class="type dapei_rightwenzi1">
+							<h2>热门</h2>
+						</div>
+						<div class="type">
+							<h2>保护套</h2>
+						</div>
 
-				<div class="dapei_last dapei_item1">
-					<div class="dapei_last_left">
-						<h1 class="last_wenzi">流量更多</h1>
-						<h2 class="last_wenzi2">热门</h2>
+						<div class="type">
+							<h2>贴膜</h2>
+						</div>
+
+						<div class="type">
+							<h2>其他配件</h2>
+						</div>
+					</div>				
+				</div>
+				<div class="yingjian_product">
+					<div class="product_left">
+						<div class="dapei_left">
+							<img src="../image/10.jpg" alt="">
+						</div>
+						<div class="dapei_left dapei_item1">
+								<img src="../image/11.jpg" alt="">
+						</div>
 					</div>
-					<div class="dapei_last_right">
-						<span>&#xe62a;</span>
-					</div>					
-				</div>				
-			</div>								
+				<div class="goodslists">
+					<div class="goodslist goodslist_active">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/19.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/18.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/17.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/20.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/16.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/11.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/21.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>	
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/20.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/21.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/22.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/23.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/24.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/25.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/26.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>		
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/19.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/18.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/17.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/20.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/16.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/11.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/21.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>	
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/20.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/21.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/22.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/23.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/24.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/25.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/26.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>	
+					</div>		
+				</div>								
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="dapei">
+				<div class="yingjian_top">
+					<h1>周边</h1>
+					<div class="dapei_rightwenzi">
+						<div class="type dapei_rightwenzi1">
+							<h2>热门</h2>
+						</div>
+						<div class="type">
+							<h2>出行</h2>
+						</div>
+
+						<div class="type">
+							<h2>居家</h2>
+						</div>
+
+						<div class="type">
+							<h2>生活周边</h2>
+						</div>
+
+						<div class="type">
+							<h2>箱包</h2>
+						</div>
+					</div>				
+				</div>
+				<div class="yingjian_product">
+					<div class="product_left">
+						<div class="dapei_left">
+							<img src="../image/10.jpg" alt="">
+						</div>
+						<div class="dapei_left dapei_item1">
+								<img src="../image/11.jpg" alt="">
+						</div>
+					</div>
+				<div class="goodslists">
+					<div class="goodslist goodslist_active">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/19.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/18.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/17.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/20.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/16.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/11.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/21.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>	
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/20.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/21.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/22.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/23.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/24.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/25.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/26.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>		
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/19.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/18.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/17.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/20.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/16.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/11.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/21.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>	
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/20.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/21.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/22.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/23.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/24.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/25.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/26.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>
+					<div class="goodslist">											
+						<div class="yingjian_item dapei_item2">
+							<img src="../image/19.jpg" alt="">
+							<a>小米运动蓝牙耳机</a>
+							<h5>149元</h5>
+							<p>439人评价</p>
+							<div class="zhineng_tan">
+									我一直忠爱小米电视，物流超给力，特别划算，看到画面挺...
+							</div>
+							<div class="zhineng_dazhe">
+									享九折
+							</div>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/18.jpg" alt="">
+							<a>200000mah小米移动电源</a>
+							<h5>149元</h5>
+							<p>11万人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/17.jpg" alt="">
+							<a>小米移动电源10000mah高配版</a>
+							<h5>149元</h5>
+							<p>4928人评价</p>
+						</div>
+
+						<div class="yingjian_item">
+							<img src="../image/20.jpg" alt="">
+							<a>小米网络音响</a>
+							<h5>399元</h5>
+							<p>4479人评价</p>
+						</div>	
+
+																	
+						<div class="yingjian_item dapei_item2 dapei_item1">
+							<img src="../image/16.jpg" alt="">
+							<a>小米活塞耳机 清新版</a>
+							<h5>29元</h5>
+							<p>28人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/11.jpg" alt="">
+							<a>小米蓝牙耳机青春版</a>
+							<h5>59元</h5>
+							<p>1.2万人评价</p>
+						</div>
+
+						<div class="yingjian_item dapei_item1">
+							<img src="../image/21.jpg" alt="">
+							<a>小米圈铁耳机</a>
+							<h5>149元</h5>
+							<p>1.4万人评价</p>
+						</div>								
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">小米小钢炮...</h1>
+								<h2 class="last_wenzi2">129元</h2>
+							</div>
+							<div class="dapei_last_right">
+								<img src="../image/23.jpg" alt="">
+							</div>					
+						</div>	
+
+						<div class="dapei_last dapei_item1">
+							<div class="dapei_last_left">
+								<h1 class="last_wenzi">流量更多</h1>
+								<h2 class="last_wenzi2">热门</h2>
+							</div>
+							<div class="dapei_last_right">
+								<span>&#xe62a;</span>
+							</div>					
+						</div>	
+					</div>		
+				</div>		
+				</div>								
+			</div>
 		</div>
 	<!-- 搭配结束 -->
 	<!-- 配件开始 -->
-		<div class="dapei">
+		<!-- <div class="dapei">
 			<div class="yingjian_top">
 				<h1>配件</h1>
 				<div class="dapei_rightwenzi">
@@ -670,10 +1808,10 @@
 					</div>						
 				</div>				
 			</div>								
-		</div>
+		</div> -->
 	<!-- 配件结束 -->
 	<!-- 周边开始 -->
-		<div class="dapei">
+		<!-- <div class="dapei">
 			<div class="yingjian_top">
 				<h1>周边</h1>
 				<div class="dapei_rightwenzi">
@@ -778,7 +1916,7 @@
 					</div>					
 				</div>				
 			</div>								
-		</div>
+		</div> -->
 	<!-- 周边结束 -->
 	<!-- 为你推荐开始 -->
 		<div class="tuijian">
@@ -872,40 +2010,249 @@
 			<div class="yingjian_top">
 				<h1>内容</h1>								
 			</div>
-			<div class="neirong_item">
-				<div class="neirong_item_weizi">
-					<h1>图书</h1>
-					<h2>哈利波特与被诅咒的孩子</h2>
-					<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
-					<h4>29.37元</h4>
-				</div>
-				<div class="neirong_item_lbtn">
-						&gt;
-				</div>
-				<div class="neirong_item_rbtn">
-						&lt;
-				</div>
-				<div class="neirong_image">
-					<img src="../image/neirong/01.png" alt="">
-				</div>				
-				<div class="neirong_last">
-					<div class="neirong_last1 neirong_last2">
-						<div class="neirong_btn neirong_btn1">
-						
+			<ul class="neirong_content">
+				<li class="neirong_item">
+					<div class="neirong_title">
+						<h1>图书</h1>
+						<!-- <h2>哈利波特与被诅咒的孩子</h2>
+						<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+						<h4>29.37元</h4> -->
+					</div>
+					
+					<ul class="imagebox neirong_display">
+						<div class="image_item image_item_active">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/01.png" alt="">
+							</div>
 						</div>
-
-						<div class="neirong_btn">
-						
+						<div class="image_item">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/02.png" alt="">
+							</div>
 						</div>
-
-						<div class="neirong_btn neirong_btn2">
-						
+						<div class="image_item">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/01.png" alt="">
+							</div>
 						</div>
-					</div>					
-				</div>
-			</div>
+					</ul>	
 
-			<div class="neirong_item neirong_item_color">
+					<div class="content_btn">
+						<!-- <li class="prev"> -->
+						<div class="neirong_item_lbtn">
+							&lt;
+						</div>
+						<!-- </li> -->
+						<!-- <li class="next"> -->
+						<div class="neirong_item_rbtn">
+							&gt;
+						</div>
+						<!-- </li> -->
+					</div>		
+					<ul class="neirong_pagerbox">
+						<li class="active"></li>
+						<li></li>
+						<li></li>					
+					</ul>
+				</li>
+
+				<li class="neirong_item">
+					<div class="neirong_title">
+						<h1>图书</h1>
+						<!-- <h2>哈利波特与被诅咒的孩子</h2>
+						<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+						<h4>29.37元</h4> -->
+					</div>
+					
+					<ul class="imagebox">
+						<div class="image_item image_item_active">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/01.png" alt="">
+							</div>
+						</div>
+						<div class="image_item">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/02.png" alt="">
+							</div>
+						</div>
+						<div class="image_item">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/01.png" alt="">
+							</div>
+						</div>
+					</ul>	
+
+					<div class="content_btn">
+						<!-- <li class="prev"> -->
+						<div class="neirong_item_lbtn">
+							&lt;
+						</div>
+						<!-- </li> -->
+						<!-- <li class="next"> -->
+						<div class="neirong_item_rbtn">
+							&gt;
+						</div>
+						<!-- </li> -->
+					</div>		
+					<ul class="neirong_pagerbox">
+						<li class="active"></li>
+						<li></li>
+						<li></li>					
+					</ul>
+				</li>
+
+				<li class="neirong_item">
+					<div class="neirong_title">
+						<h1>图书</h1>
+						<!-- <h2>哈利波特与被诅咒的孩子</h2>
+						<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+						<h4>29.37元</h4> -->
+					</div>
+					
+					<ul class="imagebox">
+						<div class="image_item image_item_active">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/01.png" alt="">
+							</div>
+						</div>
+						<div class="image_item">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/02.png" alt="">
+							</div>
+						</div>
+						<div class="image_item">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/01.png" alt="">
+							</div>
+						</div>
+					</ul>	
+
+					<div class="content_btn">
+						<!-- <li class="prev"> -->
+						<div class="neirong_item_lbtn">
+							&lt;
+						</div>
+						<!-- </li> -->
+						<!-- <li class="next"> -->
+						<div class="neirong_item_rbtn">
+							&gt;
+						</div>
+						<!-- </li> -->
+					</div>		
+					<ul class="neirong_pagerbox">
+						<li class="active"></li>
+						<li></li>
+						<li></li>					
+					</ul>
+				</li>
+
+				<li class="neirong_item">
+					<div class="neirong_title">
+						<h1>图书</h1>
+						<!-- <h2>哈利波特与被诅咒的孩子</h2>
+						<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+						<h4>29.37元</h4> -->
+					</div>
+					
+					<ul class="imagebox">
+						<div class="image_item image_item_active">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/01.png" alt="">
+							</div>
+						</div>
+						<div class="image_item">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/02.png" alt="">
+							</div>
+						</div>
+						<div class="image_item">
+							<div class="neirong_weizi">
+								<h2>哈利波特与被诅咒的孩子</h2>
+								<h3>哈利波特第八个故事中文版震撼来袭！特别彩排版剧本</h3>
+								<h4>29.37元</h4>
+							</div>
+							<div class="neirong_image">
+								<img src="../image/neirong/01.png" alt="">
+							</div>
+						</div>
+					</ul>	
+
+					<div class="content_btn">
+						<!-- <li class="prev"> -->
+						<div class="neirong_item_lbtn">
+							&lt;
+						</div>
+						<!-- </li> -->
+						<!-- <li class="next"> -->
+						<div class="neirong_item_rbtn">
+							&gt;
+						</div>
+						<!-- </li> -->
+					</div>		
+					<ul class="neirong_pagerbox">
+						<li class="active"></li>
+						<li></li>
+						<li></li>					
+					</ul>
+				</li>
+			</ul>
+
+			<!-- <div class="neirong_item neirong_item_color">
 				<div class="neirong_item_weizi">
 					<h1 id="neirong_item_title1">MIUI主题</h1>
 					<h2>小米6</h2>
@@ -1014,7 +2361,7 @@
 						</div>
 					</div>	
 				</div>
-			</div>
+			</div> -->
 		</div>
 	<!-- 内容结束 -->
 	<!-- 视频开始 -->
@@ -1270,4 +2617,7 @@
 		</div>
 	<!-- 底部结束 -->
 </body>
+
+<script src="../js/index.js"></script>
+
 </html>

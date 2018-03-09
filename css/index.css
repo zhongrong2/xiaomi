@@ -202,14 +202,14 @@
 .star_btn div{
 	width: 34px;
 	height: 24px;
-	color: #CBC8C8;
+	color: #4b4b4b;
 	text-align: center;
 	line-height: 24px;
 	float: left;
 }
 .star_btn1{
 	border-right: 1px solid  #E3E3E3;
-	color: #b0b0b4;
+	color: #4b4b4b;
 }
 .star_bottom{
 	width: 1226px;
@@ -225,7 +225,7 @@
 	margin-right: 14px;
 }
 .star_item1{
-	margin-right: 0;
+	/* margin-right: 0; */
 	border-top-color:#00C0A5;
 }
 .star_item2{
@@ -287,7 +287,7 @@
 	font-size: 14px;
 	float: left;
 	margin-top: 22px;	
-	margin-left:  16px;
+	/* margin-left:  16px; */
 }
 .dapei_rightwenzi1{
 	color: red;
@@ -410,7 +410,7 @@
 	width: 234px;
 	height: 300px;
 	float: left;
-	margin-right: 14px;
+	margin-left: 14px;
 }
 .dapei_left img{
 	width: 234px;
@@ -1096,11 +1096,11 @@
 	cursor: pointer;
 }
 
-.dapei_rightwenzi h2:hover{
+/* .dapei_rightwenzi h2:hover{
 	color: red;
 	border-bottom: 2px solid red;
 	cursor: pointer;
-}
+} */
 
 .zhantu_top_item:hover{
 	color: #ff6700;
@@ -1365,4 +1365,273 @@
 	box-shadow: 0 10px 20px 5px #a9a8a8;
 	transform:translate(0,-4px) ;
 	
+}
+
+
+
+#banner{
+	width: 1226px;
+	height: 460px;
+	margin: 0 auto;
+}
+.imgbox{
+	width: 1226px;
+	height: 460px;
+	position: relative;
+}
+.imgbox li{
+	width: 1226px;
+	height: 460px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 1s ease-in;
+	opacity: 0;
+}
+.imgbox li.active{
+	z-index: 9;
+	opacity: 1;
+}
+.pagerbox{
+	width: 150px;
+	height: 10px;
+	/* background-color: red; */
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	z-index: 999;
+}
+.pagerbox li{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 2px solid #6b6b6b;
+	cursor: pointer;
+	margin: 0 10px;
+	float: left;
+	background-color: #fff;
+	transition: all 0.5s;
+}
+.pagerbox li.active{
+	background-color: red;
+}
+
+.prev,.next{
+	width: 41px;
+	height: 69px;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	z-index: 9999;
+	background: url("../image/banner/icon-slides.png");
+	cursor: pointer;
+	opacity: 0.6;
+}
+.prev{
+	left: 234px;
+	background-position: -84px 0;
+}
+.prev:hover{
+	background-position: 0 0;
+}
+.next{
+	right: 0;
+	background-position: -124px 0;
+}
+.next:hover{
+	background-position: -42px 0;
+}
+
+
+
+.buy-bottom{
+	width: 100%;
+	height: 300px;
+	/* background-color: pink; */
+}
+/* .buy-time{
+	width: 234px;
+	height: 300px;
+	float: left;
+	margin-right: 14px;
+	background: pink;
+} */
+.buy_list{
+	width: 1226px;
+	height: 300px;
+	float: left;
+	overflow: hidden;
+}
+.buy-inner{
+	width: 4000px;
+	height: 300px;
+	transition: all 1s;
+}
+.star_btn div.display{
+	color: #ccc;
+}
+
+
+
+.type{
+	float: left;
+	margin-left: 16px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.product_left{
+	width: 248px;
+	height: 614px;
+	float: left;
+	margin-left: -14px;
+}
+.goodslists{
+	position: relative;
+	width: 978px;
+	height: 614px;
+	float: right;
+	margin-left: 14px;
+	transition: all 1s;
+}
+.goodslist{
+	position: absolute;
+	top: 0;
+	left: 0px;
+	bottom: 0;
+	right: 0;
+	transition: all 1s;
+}
+.goodslist_active{
+	z-index: 99;
+}
+
+
+.neirong_content{
+	width: 1240px;
+	height: 420px;
+	margin: 0 auto;
+}
+.neirong_item{
+	height: 375px;
+	padding-top: 45px;
+}
+.neirong_title{
+	width: 276px;
+	height: 24px;
+	margin: 0 10px 18px 10px;
+	float: left;
+}
+.neirong_title h1{
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	color: #ffac13;
+}
+.image_item{
+	width: 296px;
+	height: 260px;
+	float: left;
+}
+.neirong_weizi h2{
+	width: 256px;
+	height: 25px;
+	margin: 0 20px 5px 20px;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+.neirong_weizi h3{
+	width: 200px;
+	height: 40px;
+	margin: 0 48px 10px 48px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #b0b0b0;
+}
+.neirong_weizi h4{
+	width: 276px;
+	height: 21px;
+	margin: 0 15px 10px 15px;
+	text-align: center;
+	font-size: 12px;
+}
+.content_btn{
+	background-color: #B0B0B0;
+	margin-right: 25px;
+	border-radius: 50%;
+	color: #fff;
+	float: left;
+	/* margin: 0 auto; */
+	text-align: center;
+}
+.neirong_lbtn{
+	margin-right: 0px;
+}
+.neirong_rbtn{
+	background-color: #FFFFFF;
+	border: 1px solid #FF7D26;
+}
+.neirong_btn{
+	width: 8px;
+	height: 8px;
+	background-color: #B0B0B0;
+	margin-right: 25px;
+	border-radius: 50%;
+	color: #fff;
+	float: left;
+	/* margin: 0 auto; */
+	text-align: center;
+}
+.neirong_btn2{
+	margin-right: 0px;
+}
+.neirong_btn1{
+	background-color: #FFFFFF;
+	border: 1px solid #FF7D26;
+}
+.neirong_item_lbtn{
+	top: 190px;
+}
+.neirong_pagerbox{
+	width: 100px;
+	height: 30px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 100px;
+	/* margin: 0 auto; */
+	text-align: center;
+	z-index: 999;
+}
+.neirong_pagerbox li{
+	width: 10px;
+	height: 10px;
+	/* padding: 10px; */
+	margin: 2px 10px;
+	border-radius: 50%;
+	background-color: #b0b0b0;
+	float: left;
+}
+.neirong_pagerbox li.active{
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+	border: 2px solid #ffac13;
+}
+.neirong_pagerbox li:hover{
+	cursor: pointer;
+	background-color: #ffac13;
+}
+.imagebox{
+	float: left;
+	width: 1000px;
+	height: 290px;
+	position: relative;
+	overflow: hidden;
+}
+.image_item{
+	float: left;
+}
+.image_item_active{
+	z-index: 9;
 }
