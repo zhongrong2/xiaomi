@@ -131,55 +131,61 @@
 
 //内容
 {
-	let pagers=document.querySelectorAll(".neirong_pagerbox li");
-	let imgs=document.querySelectorAll(".image_item");
-	let btns=document.querySelectorAll(".content_btn div");
-	let next=document.querySelector(".neirong_item_lbtn");
-	let prev=document.querySelector(".neirong_item_rbtn");
-	console.log(pagers,imgs,btns,next,prev);
+	function neirong(every){
+		// let pagers=document.querySelectorAll(".neirong_pagerbox li");
+		// let imgs=document.querySelectorAll(".image_item");
+		// let btns=document.querySelectorAll(".content_btn div");
+		let lbtn=every.querySelector(".neirong_item_lbtn");
+		let rbtn=every.querySelector(".neirong_item_rbtn");
+		let imgbox=every.querySelector(".imagebox")
+		// console.log(pagers,imgs,rbtn,lbtn,imgbox);
 
 
-	pagers.forEach(function(ele,index){
-		ele.onclick=function(){
-			for(let i=0;i<imgs.length;i++){
-				// imgs[i].classList.remove("active");
-				pagers[i].classList.remove("active");
+	// pagers.forEach(function(ele,index){
+	// 	ele.onclick=function(){
+	// 		for(let i=0;i<imgs.length;i++){
+	// 			// imgs[i].classList.remove("active");
+	// 			pagers[i].classList.remove("active");
+
+	// 		}
+	// 		// this/ele/pagers[]
+			
+	// 		this.classList.add('active');
+	// 		// imgs[index].classList.add('active');
+	// 		imagebox.style.marginLeft=-296*n+"px";
+	// 	}
+	// });
+
+
+		let n=0;
+			rbtn.onclick=function(){
+				n++;
+				// pagers.classList.remove('active');
+				if(n===2){
+					// this.classList.add('active');
+				}
+				if(n===3){
+					n=2;
+					return;
+				}
+				imgbox.style.marginLeft=-296*n+"px";
+			}
+			lbtn.onclick=function(){
+				n--;
+				// pagers.classList.remove('active');
+				if(n===0){
+					// this.classList.add('active');
+				}
+				if(n===-1){
+					n=0;
+					return;
+				}
+				imgbox.style.marginLeft=-296*n+"px";
 
 			}
-			// this/ele/pagers[]
-			
-			this.classList.add('active');
-			// imgs[index].classList.add('active');
-			imagebox.style.marginLeft=-296*n+"px";
-		}
-	});
-
-
-	let n=0;
-	next.onclick=function(){
-		n++;
-		prev.classList.remove('active');
-		if(n===2){
-			this.classList.add('active');
-		}
-		if(n===3){
-			n=2;
-			return;
-		}
-		imagebox.style.marginLeft=-296*n+"px";
 	}
-	prev.onclick=function(){
-		n--;
-		next.classList.remove('active');
-		if(n===0){
-			this.classList.add('active');
-		}
-		if(n===-1){
-			n=0;
-			return;
-		}
-		inner.style.marginLeft=-296*n+"px";
-
-	}
-	
+	const neirong_items=document.querySelectorAll(".neirong_item");
+	neirong_items.forEach(function(ele,index){
+		neirong(ele);
+	})
 }
