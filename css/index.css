@@ -930,7 +930,7 @@
 	top: 0;
 	padding:20px 0px;
 	/* opacity: .6; */
-	 /* z-index: -1;  */
+	 z-index: 999; 
 }
 .banner_nav li{
 	width: 174px;
@@ -1301,7 +1301,8 @@
 	transition: all 1s linear;
 	position: absolute;
 	z-index: 999;
-	/* opacity: 0; */
+	opacity: 0;
+	float: left;
 }
 .neirong_item_rbtn{
 	width: 20px;
@@ -1317,15 +1318,22 @@
 	transition: all 1s linear;
 	position: absolute;
 	z-index: 999;
-	/* opacity: 0; */
+	opacity: 0;
+	float: right;
 }
-.neirong_item:hover.neirong_item_lbtn{
+.neirong_item:hover .neirong_item_lbtn{
 	bottom: 0;
 	opacity: 1;
 }
-.neirong_item:hover.neirong_item_rbtn{
+.neirong_item:hover .neirong_item_rbtn{
 	bottom: 0;
 	opacity: 1;
+}
+.neirong_item_lbtn:hover{
+	background-color: rgba(66, 66, 66, 0.8);
+}
+.neirong_item_rbtn:hover{
+	background-color: rgba(66, 66, 66, 0.8);
 }
 
 .yingjian_left,.yingjian_item{
@@ -1424,7 +1432,7 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -35px;
-	z-index: 9999;
+	z-index: 98;
 	background: url("../image/banner/icon-slides.png");
 	cursor: pointer;
 	opacity: 0.6;
@@ -1596,44 +1604,199 @@
 	top: 190px;
 }
 .neirong_pagerbox{
-	width: 100px;
+	width: 296px;
 	height: 30px;
 	float: left;
 	margin-top: 0px;
-	margin-left: 100px;
+	/* margin-left: 100px; */
 	/* margin: 0 auto; */
 	text-align: center;
 	z-index: 999;
 }
-.neirong_pagerbox li{
+.neirong_pagerbox span{
 	width: 10px;
 	height: 10px;
 	/* padding: 10px; */
 	margin: 2px 10px;
 	border-radius: 50%;
 	background-color: #b0b0b0;
-	float: left;
+	/* float: left; */
+	text-align: center!important;
+	display: inline-block;
 }
-.neirong_pagerbox li.active{
+.neirong_pagerbox span.active{
 	width: 8px;
 	height: 8px;
 	background-color: #fff;
 	border: 2px solid #ffac13;
+	text-align: center;
 }
-.neirong_pagerbox li:hover{
+.neirong_pagerbox span:hover{
 	cursor: pointer;
 	background-color: #ffac13;
 }
 .imagebox{
 	float: left;
-	width: 1000px;
+	width: 1200px;
 	height: 290px;
 	position: relative;
 	overflow: hidden;
+	transition: all 1s;
 }
 .image_item{
 	float: left;
 }
 .image_item_active{
 	z-index: 9;
+}
+
+
+.neirong_item2{
+	border-top: 1px solid #83c44e;
+}
+.neirong_item3{
+	border-top: 1px solid #e53935;
+}
+.neirong_item4{
+	border-top: 1px solid #2196f3;
+}
+.neirong_title2 h1{
+	color: #83c44e;
+}
+.neirong_title3 h1{
+	color: #e53935;
+}
+.neirong_title4 h1{
+	color: #2196f3;
+}
+
+
+
+.sidebar{
+	width: 234px;
+	height: 445px;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	z-index: 99;
+	float: left;
+	padding-top: 15px;
+}
+.lable{
+	width: 100%;
+	height: 42px;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+	cursor: pointer;
+	z-index: 99;
+}
+.lable h1{
+	font-size: 14px;
+	color: #fff;
+	float: left;
+	padding-left: 30px;
+	line-height: 42px;
+}
+.lable h2{
+	font-size: 14px;
+	color: #fff;
+	float: right;
+	margin-right: 20px;
+	line-height: 42px;
+}
+.menu{
+	width: 700px;
+	height: 460px;
+	position: absolute;
+	left: 234px;
+	top: 0;
+	background-color: #fff;
+	float: left;
+	display: none;
+}
+.menu_active{
+	display: block;
+}
+.lable:hover{
+	background-color: #ff6700;
+}
+.banner_tanwenzi2:hover{
+	color: #ff6700;
+}
+
+
+.nav{
+	position: relative;
+}
+.nav_box{
+	width: 1000px;
+	height: auto;
+	float: left;
+}
+.nav_wenzi{
+	position: relative;
+}
+.nav_bottom{
+	width: 1334px;
+	height: 300px;
+	/* overflow: hidden; */
+	transition: all 1s;
+	background-color: #fff;
+	position: absolute;
+	float: left;
+	top: 80px;
+	z-index: 999;
+	left: -300px;
+	border-top: 1px solid #ccc;
+	display: none;
+	/* font-size: 20px;
+	text-align: center;
+	color: #fff; */
+}
+.nav_bottom_box{
+	width: 1226px;
+	height: 260px;
+	/* margin: 0 auto; */
+	/* background-color: red; */
+	float: left;
+	z-index: 9999;
+	padding-left: 80px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+.bottom_box_item{
+	width: 180px;
+	float: left;
+}
+.box_img{
+	width: 175px;
+	height: 110px;
+	margin: 0 auto;
+	/* padding-right: 15px; */
+	border-right: 1px solid #ccc;
+}
+.box_img img{
+	width: 160px;
+	height: 110px;
+	margin: 0 auto;
+}
+.box_title{
+	width: 160px;
+	height: 10px;
+	float: left;
+	font-size: 12px;
+	color: #757575;
+	text-align: center;
+}
+.box_price{
+	width: 160px;
+	height: 10px;
+	float: left;
+	font-size: 16px;
+	color: #ff6700;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 16px;
+	text-align: center;
+	font-weight: normal;
 }

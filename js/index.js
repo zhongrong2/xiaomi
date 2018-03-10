@@ -132,60 +132,109 @@
 //内容
 {
 	function neirong(every){
-		// let pagers=document.querySelectorAll(".neirong_pagerbox li");
-		// let imgs=document.querySelectorAll(".image_item");
+		let pagers=every.querySelectorAll(".neirong_pagerbox span");
+		let imgs=every.querySelectorAll(".image_item");
 		// let btns=document.querySelectorAll(".content_btn div");
 		let lbtn=every.querySelector(".neirong_item_lbtn");
 		let rbtn=every.querySelector(".neirong_item_rbtn");
 		let imgbox=every.querySelector(".imagebox")
-		// console.log(pagers,imgs,rbtn,lbtn,imgbox);
-
-
-	// pagers.forEach(function(ele,index){
-	// 	ele.onclick=function(){
-	// 		for(let i=0;i<imgs.length;i++){
-	// 			// imgs[i].classList.remove("active");
-	// 			pagers[i].classList.remove("active");
-
-	// 		}
-	// 		// this/ele/pagers[]
-			
-	// 		this.classList.add('active');
-	// 		// imgs[index].classList.add('active');
-	// 		imagebox.style.marginLeft=-296*n+"px";
-	// 	}
-	// });
-
+		// console.log(imgs);
 
 		let n=0;
 			rbtn.onclick=function(){
 				n++;
-				// pagers.classList.remove('active');
-				if(n===2){
-					// this.classList.add('active');
-				}
-				if(n===3){
-					n=2;
+				
+				if(n===imgs.length){
+
+					n=imgs.length-1;
 					return;
 				}
 				imgbox.style.marginLeft=-296*n+"px";
+				pagers[n-1].classList.remove('active');
+				pagers[n].classList.add('active');
+
+				obj=pagers[n];
+
 			}
 			lbtn.onclick=function(){
 				n--;
-				// pagers.classList.remove('active');
-				if(n===0){
-					// this.classList.add('active');
-				}
-				if(n===-1){
+				
+				if(n<0){
+					
 					n=0;
 					return;
 				}
 				imgbox.style.marginLeft=-296*n+"px";
+				pagers[n+1].classList.remove('active');
+				pagers[n].classList.add('active');
 
+				obj=pagers[n];
 			}
+
+
+		let obj=pagers[0];
+		// let i=0;
+		pagers.forEach(function(ele,index){
+		ele.onclick=function(){
+			// i++
+		obj.classList.remove("active");
+		this.classList.add("active");
+		obj=this;
+
+
+		imgbox.style.marginLeft=-296*index+"px";
+		n=index;
+			
+			
+		}
+	});
+
 	}
+
+
 	const neirong_items=document.querySelectorAll(".neirong_item");
 	neirong_items.forEach(function(ele,index){
 		neirong(ele);
 	})
+}
+
+//旁边
+{
+	let lables=document.querySelectorAll(".lable");
+	let menus=document.querySelectorAll(".menu");
+	let sidebar=document.querySelectorAll("sidebar");
+	// console.log(lables,menus);
+
+	let obj=menus[0]
+	lables.forEach(function(ele,index){
+		ele.onmouseenter=function(){
+
+			obj.classList.remove("menu_active");
+			menus[index].classList.add("menu_active");
+			obj=menus[index];
+		}
+		ele.onmouseleave=function(){
+			obj.classList.remove("menu_active");
+		}
+	})
+}
+
+//导航
+{
+	let nav_box=document.querySelector(".nav_box");
+	let top=document.querySelectorAll(".nav_wenzi span");
+	let nav_bottom=document.querySelectorAll(".nav_bottom");
+	console.log(nav_box,top,nav_bottom);
+
+	top.forEach(function(ele,index){
+		ele.onmouseenter=function(){
+			nav_bottom[index].style.height="300px";
+			nav_bottom[index].style.display="block";
+		}
+		ele.onmouseleave=function(){
+			nav_bottom[index].style.height="0px";
+			nav_bottom[index].style.display="none";
+		}
+	})
+	
 }
