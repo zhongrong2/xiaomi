@@ -238,3 +238,37 @@
 	})
 	
 }
+
+//为你推荐
+{
+    const prev=document.querySelector(".star_btn3");
+    const next=document.querySelector(".star_btn4");
+    const inner=document.querySelector(".tuijianitems");
+
+    let n=0;
+    next.onclick=function(){
+        n++;
+        prev.classList.remove('display');
+        if(n===2){
+            this.classList.add('display');
+        }
+        if(n===3){
+            n=2;
+            return;
+        }
+        inner.style.marginLeft=-992*n+"px";
+    }
+    prev.onclick=function(){
+        n--;
+        next.classList.remove('display');
+        if(n===0){
+            this.classList.add('display');
+        }
+        if(n===-1){
+            n=0;
+            return;
+        }
+        inner.style.marginLeft=-992*n+"px";
+
+    }
+}

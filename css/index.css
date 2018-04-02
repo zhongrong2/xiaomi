@@ -1800,3 +1800,10 @@
 	text-align: center;
 	font-weight: normal;
 }
+
+.tuijianitems{
+	width: 4000px;
+}
+.yingjian_product{
+	overflow: hidden;
+}
