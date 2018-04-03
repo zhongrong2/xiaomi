@@ -1803,6 +1803,7 @@
 
 .tuijianitems{
 	width: 4000px;
+	transition: all 0.5s linear;
 }
 .yingjian_product{
 	overflow: hidden;
